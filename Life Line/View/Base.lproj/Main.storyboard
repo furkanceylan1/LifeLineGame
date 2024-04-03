@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Life_Line" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Ylz-Eo-ucR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ib7-7z-cyT">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYT-l2-ZUt">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="644"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efp-u8-BTS" userLabel="choice1">
+                                        <rect key="frame" x="20" y="649" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="6Gy-wb-JFw"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Choice 1">
+                                            <backgroundConfiguration key="background" image="choice1Background"/>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="choiceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HFI-UN-wEv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTp-gC-adA" userLabel="choice2">
+                                        <rect key="frame" x="20" y="734" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="tS6-zg-KHt"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Choice 2">
+                                            <backgroundConfiguration key="background" image="choice2Background"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="choiceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6P-Kp-AsW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vTp-gC-adA" firstAttribute="leading" secondItem="ib7-7z-cyT" secondAttribute="leading" constant="20" id="0p1-Jl-Kfc"/>
+                                    <constraint firstAttribute="trailing" secondItem="JYT-l2-ZUt" secondAttribute="trailing" constant="20" id="IRd-xG-dXZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Efp-u8-BTS" secondAttribute="trailing" constant="20" id="MMU-hG-DBB"/>
+                                    <constraint firstItem="JYT-l2-ZUt" firstAttribute="leading" secondItem="ib7-7z-cyT" secondAttribute="leading" constant="20" id="Pia-1N-3b3"/>
+                                    <constraint firstAttribute="trailing" secondItem="vTp-gC-adA" secondAttribute="trailing" constant="20" id="gW3-So-Qnc"/>
+                                    <constraint firstItem="Efp-u8-BTS" firstAttribute="leading" secondItem="ib7-7z-cyT" secondAttribute="leading" constant="20" id="upz-P9-z6v"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ylz-Eo-ucR" secondAttribute="bottom" id="12x-wD-uG9"/>
+                            <constraint firstItem="Ylz-Eo-ucR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5xd-xZ-voS"/>
+                            <constraint firstItem="Ylz-Eo-ucR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="85H-fo-non"/>
+                            <constraint firstItem="ib7-7z-cyT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GgB-GH-PzA"/>
+                            <constraint firstItem="ib7-7z-cyT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bVz-4X-2dW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ylz-Eo-ucR" secondAttribute="trailing" id="dJ2-tE-KqG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ib7-7z-cyT" secondAttribute="bottom" id="dhQ-H9-mqL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ib7-7z-cyT" secondAttribute="trailing" id="g3G-ZF-Zlh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choice1Button" destination="Efp-u8-BTS" id="pJj-pg-Y05"/>
+                        <outlet property="choice2Button" destination="vTp-gC-adA" id="LUx-oS-Jpt"/>
+                        <outlet property="storyLabel" destination="JYT-l2-ZUt" id="JfW-ak-aBm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="958" height="1793"/>
+        <image name="choice1Background" width="1370.5" height="363"/>
+        <image name="choice2Background" width="1370.5" height="363"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
